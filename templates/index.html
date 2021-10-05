@@ -1,0 +1,86 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0800246b9b.js" crossorigin="anonymous"></script>
+<body style = "height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;background-image:url(https://i.imgur.com/Lz2tRGn.png); background-color: black; color: white; text-align: center;">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+</style>
+{% block content %}
+	{% include 'header.html' %}
+{% endblock %}
+<img src = "https://cdn.discordapp.com/avatars/880831549120065606/18b1ee81838a37ddc82555374116dc29.png?size=128" style = "border-radius: 100%; width: 200px; height: 200px;">
+<h1 style = "font-size: 100px;">
+  Paradox
+</h1>
+<p>
+  Your ultimate multi-purpose bot
+</p>
+<br>
+{%if islogin%}
+<a href = "/me" class = "btn btn-outline-info"><i class="fas fa-sign-out-alt"></i> Profile </a>
+{%else%}
+<a href = "/login" class = "btn btn-outline-success"><i class="fas fa-sign-out-alt"></i> Login with Discord </a>
+{%endif%}
+<a href = "/server" class = "btn btn-outline-primary"><i class="fab fa-discord"></i> Support Server </a>
+<a href = "/invite" class = "btn btn-outline-warning"><i class="far fa-plus-square"></i> Invite </a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class = "row" style = "text-align: center; margin: 10%;">
+	<div class = "col">
+		<div class="card" style="width: 18rem; background-color: black; margin: 0 auto; margin-bottom: 10%; height: 600px;">
+		<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStT5HB3-xzxHiY9IcUshq-lDng-_Pe_8cqdA&usqp=CAU"class = "card-img-top">
+  		<div class="card-body">
+    		<p class="card-text">Crisp and funky music. We give you options to play spotify, youtube, soundcloud, and native support for playlists!</p>
+		</div>
+		</div>
+			</div>
+	<div class = "col">
+		<div class="card" style="width: 18rem; background-color: black; margin: 0 auto; margin-bottom: 10%; height: 600px;">
+		<img src = "https://d1nhio0ox7pgb.cloudfront.net/_img/i_collection_png/512x512/plain/hammer.png"class = "card-img-top">
+  		<div class="card-body">
+    		<p class="card-text">With our very cool moderation features, you don't have to worry about exploiters!</p>
+		</div>
+  		</div>
+	</div>
+	<div class = "col">
+		<div class="card" style="width: 18rem; background-color: black; margin: 0 auto; margin-bottom: 10%; height: 600px;">
+		<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaI4H2eYVLYd_UmJzh_r9mEUrACxL1wndPooH5mQJTk5sgjgIED0rj2xC7Tp3irorG7mY&usqp=CAU"class = "card-img-top">
+  		<div class="card-body">
+    		<p class="card-text">Hmm.. everyone needs at least some fun. Right? With our few but meaningful fun commands, you can keep your members always engaged!</p>
+		</div>
+  		</div>
+	</div>
+
+</div>
+
+{% include 'footer.html' %}
+<body>
+  <head>
+</body>

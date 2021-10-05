@@ -12,6 +12,15 @@ textcaptcha = "^0.2.0"
 randfacts = "^0.9.1"
 py-cord = "^1.7.3"
 anime-images-api = "^0.0.6"
+discord = "^1.7.3"
+Flask = "^2.0.1"
+waifu = "^0.0.2"
+lavalink = "^3.1.4"
+progress = "^1.6"
+texttoimage = "^0.0.2"
+yiffparty = "^0.06"
+waifu-py = "^1.0.3"
+Flask-Discord = "^0.1.64"
 
 [tool.poetry.dev-dependencies]
 

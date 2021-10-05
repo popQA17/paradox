@@ -1,0 +1,39 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0800246b9b.js" crossorigin="anonymous"></script>
+<body style = "height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;background-image:url(https://i.imgur.com/Lz2tRGn.png); background-color: black; color: white; text-align: center;">
+{% block content %}
+	{% include 'header.html' %}
+{% endblock %}
+<br>
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+</style>
+<br>
+<h1> <i class="far fa-check-circle"></i>Success! </h1>
+<p>
+  What you should do next:
+  <br>
+  <br>
+  Do <code> $login {{code}} </code> in the server you wish to verify in. Servers without the verified role configured will not work with this command. </p>
+  <br>
+  <a class = "btn btn-outline-light" href = "/verify/"> <i class="fas fa-reply"></i> Return </a>
+</body>
+{% include 'footer.html' %}
